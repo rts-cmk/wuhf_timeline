@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600&display=swap');
+
+body {
+    font-family: 'Oswald', sans-serif;
+
+    overflow-y: hidden;
+    margin: 0;
+    font-size: 24px;
+}
+
+.container {
+    scroll-snap-type: x mandatory;  
+   display: flex;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+}
+  
+.child {
+    height: 100vh;
+    min-width: 100vw;
+    scroll-snap-align: start;
+    padding: 10vh;
+    position: relative;
+}
+.child h1 {
+    font-sigit reset --hard HEAD@{1}ze: calc(3rem + 5vw);
+    display: inline;
+    margin:  0;
+    position: relative;
+    z-index: 2;
+}
+.child h2 {
+    position: relative;
+    display: inline-block;    
+    z-index: 0;
+    font-size: calc(1.5rem + 2vw);
+    top: 85px;
+    left: -8.5%;
+    padding:0.5em;
+    background-color: orange;
+    height: 75px;
+}
+
+.child h3, .child ul {
+    margin: 0 0 0.3em;
+}
+.child h3 {
+    margin-top: 0.75em;
+}
+.child .topics {
+    margin-top: 7%;
+    display: grid;
+}
+.pull_up {
+    position: relative;
+    top: -12vh;
+}
+.two_cols {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5em;
+}
+.three_cols {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3em;
+}
+.child::after {
+    content: "Ret til ændringer forbeholdes...";
+    position: absolute;
+    font-size: 18px;
+    top: 2%;
+    right: 12%;
+    z-index: 10;
+}
+
+/*
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-y: hidden;
+}
+.slider {
+    font-family: sans-serif;
+    scroll-snap-type: x mandatory;  
+   display: flex;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+}
+section {
+    border-right: 1px solid white;
+    padding: 1rem;
+    min-width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+}
+h1  {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+    left: 0;
+    font-size: calc(1rem + 3vw);
+}
+
+
+
+*/
