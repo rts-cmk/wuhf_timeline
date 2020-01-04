@@ -23,7 +23,7 @@ body {
     position: relative;
 }
 .child h1 {
-    font-sigit reset --hard HEAD@{1}ze: calc(3rem + 5vw);
+    font-size: calc(3rem + 5vw);
     display: inline;
     margin:  0;
     position: relative;
