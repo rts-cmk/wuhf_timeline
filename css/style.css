@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,400,600&display=swap');
 
 body {
     font-family: 'Oswald', sans-serif;
-
-    overflow-y: hidden;
     margin: 0;
     font-size: 24px;
 }
@@ -19,41 +17,99 @@ body {
     height: 100vh;
     min-width: 100vw;
     scroll-snap-align: start;
-    padding: 10vh;
+    padding: 25vh 10vh 10vh;
+    position: relative;
+    box-sizing: border-box;
+}
+nav {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100vw;
+    height: 15vh;
+    padding: 0.5em 0 0; 
+    box-sizing: border-box;
+}
+
+nav ul {
+    font-size: 22px;
+    margin: 2em 0 0;
+    list-style: none;
+    padding: 0.5em 10vh;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black; 
+}
+nav ul li {
+    padding: 0 ;
+    position: relative;
+}
+.wuhffag::before {
+    content: 'Overblik:';
+    position: absolute;
+    top:-155%;
+    left:0;
+    font-weight: 200;
+}
+.bootcamp::before {
+    content: 'Skoleperioder:';
+    position: absolute;
+    top:-155%;
+    left:0;
+    font-weight: 200;
+}
+nav ul li.active::after {
+    content:'';
+    position: absolute;
+    top:110%;
+    left:50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    width:0.75em;
+    height: 0.75em;
+    background-color: black;
+    border-radius:50%;
+    z-index: 10;
+}
+  
+
+.headlinediv {
+    display: inline-block;
     position: relative;
 }
 .child h1 {
-    font-size: calc(3rem + 5vw);
+    margin:0;
+    line-height: 0.75;
+    font-size: calc(2rem + 4vw);
     display: inline;
     margin:  0;
-    position: relative;
-    z-index: 2;
 }
 .child h2 {
-    position: relative;
-    display: inline-block;    
-    z-index: 0;
-    font-size: calc(1.5rem + 2vw);
-    top: 85px;
-    left: -8.5%;
+    margin: 0;
+    position: absolute;
+    z-index: -1;
+    font-size: calc(1.5rem + 1vw);
+    bottom: -100%;
+    right: -3em;
     padding:0.5em;
     background-color: orange;
-    height: 75px;
 }
 
-.child h3, .child ul {
+.topics h3, .topics ul {
     margin: 0 0 0.3em;
 }
 .child h3 {
-    margin-top: 0.75em;
+    margin-top: 0;
 }
 .child .topics {
-    margin-top: 7%;
+    height: 12em;
+    margin-top: 15vh;
+    width:85vw;
     display: grid;
 }
 .pull_up {
     position: relative;
-    top: -12vh;
+    top: -8vh;
 }
 .two_cols {
     grid-template-columns: repeat(2, 1fr);
@@ -61,54 +117,14 @@ body {
 }
 .three_cols {
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 3em;
+    grid-column-gap: 2em;
 }
 .child::after {
     content: "Ret til ændringer forbeholdes...";
     position: absolute;
-    font-size: 18px;
-    top: 2%;
-    right: 12%;
+    font-size: 16px;
+    opacity: 0.3;
+    bottom: 2%;
+    right: 2%;
     z-index: 10;
 }
-
-/*
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body {
-    overflow-y: hidden;
-}
-.slider {
-    font-family: sans-serif;
-    scroll-snap-type: x mandatory;  
-   display: flex;
-    -webkit-overflow-scrolling: touch;
-    overflow-x: scroll;
-}
-section {
-    border-right: 1px solid white;
-    padding: 1rem;
-    min-width: 100vw;
-    height: 100vh;
-    scroll-snap-align: start;
-    text-align: center;
-    position: relative;
-}
-h1  {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: white;
-    width: 100%;
-    left: 0;
-    font-size: calc(1rem + 3vw);
-}
-
-
-
-*/
