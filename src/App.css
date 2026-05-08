@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,400,600&display=swap');
+
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    font-size: 24px;
+    overflow-y: hidden;
+}
+
+.container {
+    scroll-snap-type: x mandatory;  
+   display: flex;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+}
+  
+.child {
+    height: 100vh;
+    min-width: 100vw;
+    scroll-snap-align: start;
+    padding: 25vh 10vh 10vh;
+    position: relative;
+    box-sizing: border-box;
+    z-index: -1;
+}
+nav {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100vw;
+    height: 15vh;
+    padding: 0.5em 0 0; 
+    box-sizing: border-box;
+}
+
+nav ul {
+    font-size: 22px;
+    margin: 2em 0 0;
+    list-style: none;
+    padding: 0.5em 10vh;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black; 
+}
+nav ul li {
+    padding: 0 ;
+    position: relative;
+}
+.wuhffag::before {
+    content: 'Overblik:';
+    position: absolute;
+    top:-155%;
+    left:0;
+    font-weight: 200;
+}
+.bootcamp::before {
+    content: 'Skoleperioder:';
+    position: absolute;
+    top:-155%;
+    left:0;
+    font-weight: 200;
+}
+nav ul li.active::after {
+    content:'';
+    position: absolute;
+    top:110%;
+    left:50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    width:0.75em;
+    height: 0.75em;
+    background-color: black;
+    border-radius:50%;
+    z-index: 10;
+}
+  
+
+.headlinediv {
+    display: inline-block;
+    position: relative;
+}
+.child h1 {
+    margin:0;
+    line-height: 0.75;
+    font-size: calc(2rem + 4vw);
+    display: inline;
+    margin:  0;
+}
+.child h2 {
+    margin: 0;
+    position: absolute;
+    z-index: -1;
+    font-size: calc(1.5rem + 1vw);
+    bottom: -100%;
+    right: -3em;
+    padding:0.5em;
+    background-color: orange;
+}
+
+.topics h3, .topics ul {
+    margin: 0 0 0.3em;
+}
+.child h3 {
+    margin-top: 0;
+}
+.child .topics {
+    height: 12em;
+    margin-top: 15vh;
+    width:85vw;
+    display: grid;
+}
+.pull_up {
+    position: relative;
+    top: -8vh;
+}
+.two_cols {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5em;
+}
+.three_cols {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2em;
+}
+.child::after {
+    content: "Ret til ændringer forbeholdes...";
+    position: absolute;
+    font-size: 16px;
+    opacity: 0.3;
+    bottom: 2%;
+    right: 2%;
+    z-index: 10;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a.active::after {
+    content:'';
+    position: absolute;
+    top:110%;
+    left:50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    width:0.75em;
+    height: 0.75em;
+    background-color: black;
+    border-radius:50%;
+    z-index: 10;
+    
+}
