@@ -1,10 +1,10 @@
-
+import Footer from "../Components/Footer";
 
 export default function PraktiskWeb() {
 
     return (
         <main>
-             <section class='child'>
+             <section className='child'>
            
             <div className="headlinediv">
                 <h1>Praktisk webudvikling</h1>
@@ -22,6 +22,7 @@ export default function PraktiskWeb() {
                 </article>
             </div>
         </section>
+        <Footer prevlink="/" nextlink="/bootcamp" />
         </main>
     )
 }

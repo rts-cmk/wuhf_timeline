@@ -1,10 +1,10 @@
-
+import Footer from "../Components/Footer";
 
 export default function DynamimskWeb() {
 
     return (
         <main>
-            <section class='child'>
+            <section className='child'>
            
             <div className="headlinediv">
                 <h1>Dynamisk web</h1>
@@ -52,7 +52,7 @@ export default function DynamimskWeb() {
             </div>
         </section>
 
-
+        <Footer prevlink="/bootcamp" nextlink="/frameworks-i" />
         </main>
     )
 }

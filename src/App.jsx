@@ -11,8 +11,7 @@ import FrameworksOne from "./views/FrameworksOne"
 import Praktik from "./views/Praktik"
 import FrameworksTwo from "./views/FrameworksTwo"
 import FrameworksThree from "./views/FrameworksThree"
-import Specialefag from "./views/Specialefag"
-import Navigation from "./components/Navigation"
+import SpecialFag from "./views/SpecialFag"
 import Layout from './Components/Layout'
 import { BrowserRouter, Routes, Route } from 'react-router'
 
@@ -31,7 +30,7 @@ function App() {
             <Route path='frameworks-ii' element={<FrameworksTwo />} />
             <Route path='praktik' element={<Praktik />} />
             <Route path='frameworks-iii' element={<FrameworksThree />} />
-            <Route path='specialefag' element={<Specialefag />} />
+            <Route path='specialefag' element={<SpecialFag />} />
         </Route>
       </Routes>
     </BrowserRouter>

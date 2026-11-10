@@ -1,10 +1,11 @@
+import Footer from "../Components/Footer";
 
 
 export default function Praktik() {
 
     return (
         <main>
-            <section class='child'>
+            <section className='child'>
                
             <div className="headlinediv">
                 <h1>Praktik / VFU</h1>
@@ -32,6 +33,7 @@ export default function Praktik() {
 
             </div>
         </section>
+        <Footer prevlink="/frameworks-ii" nextlink="/frameworks-iii" />
         </main>
     )
 }

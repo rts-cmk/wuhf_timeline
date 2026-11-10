@@ -1,10 +1,10 @@
-
+import Footer from "../Components/Footer";
 
 export default function FrameworksTwo() {
 
     return (
         <main>
-            <section class='child'>
+            <section className='child'>
            
             <div className="headlinediv">
                 <h1>Frameworks I + II</h1>
@@ -29,10 +29,10 @@ export default function FrameworksTwo() {
                 <article>
                     <h3>Frameworks I</h3>
                     <ul>
-                        <li>Bundlere (webpack / vite) </li>
+                        <li>Bundlere (Vite) </li>
                         <li>Transpilere (SASS)</li>
                         <li>Single Page Applications (React)</li>
-                        <li>Routing (sideskift) i SPA's</li>
+                        <li>Routing (sideskift) i SPA's (React Router)</li>
                         <li>Programmeringsmønstre i React</li>
                         <li>React hooks</li>
                         <li>A11y</li>
@@ -46,8 +46,8 @@ export default function FrameworksTwo() {
                         <li>Bruger-registrering og login</li>
                         <li>Beskyttede sider</li>
                         <li>CI / CD <small>Continuous Integration / Deployment</small></li>
-                        <li>Test-driven Development (Vitest)</li>
-                        <li>Søgemaskineoptimering (avanceret)</li>
+                        <li>Testing / test-driven Development (Vitest)</li>
+                        <li>Søgemaskine- og LLM-optimering (avanceret)</li>
                     </ul>
                 </article>
 
@@ -62,6 +62,7 @@ export default function FrameworksTwo() {
 
             </div>
         </section>
+        <Footer prevlink="/frameworks-i" nextlink="/praktik" />
         </main>
     )
 }

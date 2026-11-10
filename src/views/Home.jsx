@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer";
 
 
 export default function Home() {
@@ -35,6 +36,8 @@ export default function Home() {
                 </article>
             </div>
         </section>
+
+        <Footer prevlink="#" nextlink="/praktisk-web" />
             
         </main>
     )

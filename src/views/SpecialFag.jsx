@@ -1,15 +1,14 @@
+import Footer from "../Components/Footer";
 
-
-export default function SpecialeFag() {
+export default function SpecialFag() {
 
     return (
         <main>
-
-             <section class='child'>
+             <section className='child'>
             
             <div className="headlinediv">
                 <h1>Specialefag</h1>
-                <h2>4 uger</h2>
+                <h2>2 &times; 2 uger</h2>
             </div>
             <div className="topics three_cols">
 
@@ -34,8 +33,8 @@ export default function SpecialeFag() {
 
                 </section>
 
-                <article>
-                    <h3>Programmering og Styring af Fysiske Enheder</h3>
+               <article>
+                    <h3>Programmering og styring<br/> af fysiske enheder</h3>
                     <ul>
                         <li>Philips Hue</li>
                         <li>Smart Home applikation</li>
@@ -57,7 +56,7 @@ export default function SpecialeFag() {
             </div>
 
         </section>
-            
+        <Footer prevlink="/frameworks-iii" nextlink="#" />
         </main>
     )
 }

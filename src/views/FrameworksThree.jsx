@@ -1,10 +1,10 @@
-
+import Footer from "../Components/Footer";
 
 export default function FrameworksThree() {
 
     return (
         <main>
-             <section class='child'>
+             <section className='child'>
             
             <div className="headlinediv">
                 <h1>Frameworks III</h1>
@@ -27,6 +27,8 @@ export default function FrameworksThree() {
                 <article>
                     <h3>Discipliner</h3>
                     <ul>
+                        <li>AI-workflows</li>
+                        <li>Containerization (Docker)</li>
                         <li>OAuth (log ind med Google, Instagram etc...)</li>
                         <li>React Developer Tools</li>
                         <li>Testing (Vitest)</li>
@@ -37,13 +39,14 @@ export default function FrameworksThree() {
                 <article>
                     <h3>Projekter</h3>
                     <ul>
-                        <li>Ja! (under udvikling)...</li>
+                        <li>'Enterprise' applikation<br/>- en applikation hvor de enkelte dele af sitet er bygget som separate containere.</li>
 
                     </ul>
                 </article>
             </div>
 
         </section>
+        <Footer prevlink="/praktik" nextlink="/specialefag" />
 
         </main>
     )

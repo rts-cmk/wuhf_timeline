@@ -1,10 +1,10 @@
-
+import Footer from "../Components/Footer";
 
 export default function Bootcamp() {
 
     return (
         <main>
-            <section class='child'>
+            <section className='child'>
             
             <div className="headlinediv">
                 <h1>Bootcamp</h1>
@@ -41,6 +41,7 @@ export default function Bootcamp() {
 
             </div>
         </section>
+        <Footer prevlink="/praktisk-web" nextlink="/dynamiske-webloesninger" />
         </main>
     )
 }
